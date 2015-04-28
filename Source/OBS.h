@@ -1239,6 +1239,7 @@ public:
 
     inline static CTSTR GetCurrentProfile() {return GlobalConfig->GetStringPtr(TEXT("General"), TEXT("Profile"));}
     static void GetProfiles(StringList &profileList);
+	virtual void SetProfile(CTSTR profileName);
 
 //---------------------------------------------------------------------------
 
